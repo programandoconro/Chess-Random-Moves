@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Chess from 'react-chess'
-import myRandomPositions from './const/RandomPositions'
+import myRandomPositions from './const/RandomPositions';
+
 
 const Random = () => {
 
-    const [position, handlePosition] = useState(myRandomPositions());
+    const [position, handlePosition] = useState([]);
 
     const makeRandomPosition = () => {
         handlePosition(myRandomPositions())
@@ -13,7 +14,7 @@ const Random = () => {
     return (
         <div >
             <br />
-            <button onClick={() => makeRandomPosition()} >
+            <button onClick={(e) => makeRandomPosition(e)} >
                 Random
             </button>
             <hr />

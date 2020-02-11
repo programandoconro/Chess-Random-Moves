@@ -23,7 +23,6 @@ const Queen = () => {
                 setLetter(letters[randomNumber(letters)]);
 
             }
-            console.log(position, letter, number, 'caso 1');
 
         } else {
             for (let index = 0; index < Diagonals.length; index++) {
