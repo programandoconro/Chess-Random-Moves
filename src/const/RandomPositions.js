@@ -56,7 +56,7 @@ const myRandomPositions = () => {
     const BlackKingNumber = Number(randomNumber(numbers));
     const BlackKingLetter = Number(randomNumber(letters));
 
-    console.log(WhiteKingLetter, WhiteKingNumber);
+    // Avoid kings to be one square near to each other
 
     const checkNumber = () => {
       if (
@@ -80,14 +80,14 @@ const myRandomPositions = () => {
 
     if (checkNumber() === "TRUE" && checkLetter() === "TRUE") {
       console.log("kings are too close");
+      setBoard.push("K@" + "a1", "k@" + "h8");
+    } else {
+      setBoard.push(
+        "K@" + letters[WhiteKingLetter] + numbers[WhiteKingNumber],
+        "k@" + letters[BlackKingLetter] + numbers[BlackKingNumber]
+      );
     }
-
-    setBoard.push(
-      "K@" + letters[WhiteKingLetter] + numbers[WhiteKingNumber],
-      "k@" + letters[BlackKingLetter] + numbers[BlackKingNumber]
-    );
   };
-
   kingPosition();
 
   return setBoard;
