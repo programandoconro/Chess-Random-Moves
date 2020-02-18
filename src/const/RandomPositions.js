@@ -1,29 +1,41 @@
 import myBoard from "./Board";
 
+const shuffle = a => {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
 const myRandomPositions = () => {
   const setBoard = [];
   const fixBoard = [];
-  const chessPieces = [
+  const ChessPieces = [
     "R",
-    "Q",
-    "B",
-    "N",
     "r",
     "q",
+    "Q",
+    "B",
     "b",
     "n",
+    "N",
     "R",
+    "r",
+    "q",
     "B",
     "N",
-    "r",
     "b",
     "n"
   ];
 
+  const randomChessPieces = shuffle(ChessPieces);
+
   //Set Board and Coordenates
 
   const randomSquare = () => Math.floor(Math.random() * board.length);
-  const randomPiece = () => Math.floor(Math.random() * chessPieces.length);
+  const randomPiece = () =>
+    Math.floor(Math.random() * randomChessPieces.length);
   const board = myBoard();
   const randomNumber = array => {
     return Math.floor(Math.random() * array.length);
@@ -79,11 +91,17 @@ const myRandomPositions = () => {
 
   for (let i = 0; i < randomPiece(); i++) {
     for (let index = 0; index < board.length; index++) {
-      if (board[index] == letters[WhiteKingLetter] + numbers[WhiteKingNumber]) {
+      if (
+        board[index] ===
+        letters[WhiteKingLetter] + numbers[WhiteKingNumber]
+      ) {
         board.splice(index, 1);
         board.splice(0, 1);
       }
-      if (board[index] == letters[BlackKingLetter] + numbers[BlackKingNumber]) {
+      if (
+        board[index] ===
+        letters[BlackKingLetter] + numbers[BlackKingNumber]
+      ) {
         board.splice(index, 1);
         board.splice(board.length - 1, 1);
       }
@@ -96,11 +114,11 @@ const myRandomPositions = () => {
       }
     }
 
-    setBoard.push(chessPieces[i] + "@" + b);
+    setBoard.push(randomChessPieces[i] + "@" + b);
   }
 
   kingPosition();
-
+  console.log(setBoard);
   return setBoard;
 };
 
