@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Chess-Random-Moves/static/css/main.f9b24a81.chunk.css",
+    "main.js": "/Chess-Random-Moves/static/js/main.1c5db1ce.chunk.js",
+    "main.js.map": "/Chess-Random-Moves/static/js/main.1c5db1ce.chunk.js.map",
+    "runtime-main.js": "/Chess-Random-Moves/static/js/runtime-main.19fe41ae.js",
+    "runtime-main.js.map": "/Chess-Random-Moves/static/js/runtime-main.19fe41ae.js.map",
+    "static/js/2.d2ca3fb8.chunk.js": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js",
+    "static/js/2.d2ca3fb8.chunk.js.map": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js.map",
+    "index.html": "/Chess-Random-Moves/index.html",
+    "precache-manifest.79942c135a316dfbcc82292dcdb93999.js": "/Chess-Random-Moves/precache-manifest.79942c135a316dfbcc82292dcdb93999.js",
+    "service-worker.js": "/Chess-Random-Moves/service-worker.js",
+    "static/css/main.f9b24a81.chunk.css.map": "/Chess-Random-Moves/static/css/main.f9b24a81.chunk.css.map",
+    "static/js/2.d2ca3fb8.chunk.js.LICENSE": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19fe41ae.js",
+    "static/js/2.d2ca3fb8.chunk.js",
+    "static/css/main.f9b24a81.chunk.css",
+    "static/js/main.1c5db1ce.chunk.js"
+  ]
+}

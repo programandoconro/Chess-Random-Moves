@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,YACE,eAAgB,CAChB,6BAAsB,CAAtB,0BAAsB,CAAtB,qBAAsB,CAEtB,kBAAmB,CACnB,oBAAqB,CACrB,iBACF","file":"main.f9b24a81.chunk.css","sourcesContent":[".ChessBoard {\n  margin-top: auto;\n  max-width: fit-content;\n\n  align-items: center;\n  align-content: center;\n  text-align: center;\n}\n"]}
