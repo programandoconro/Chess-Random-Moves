@@ -20,17 +20,6 @@ jobs:
           paths:
             - "node_modules"
 
-      - run:
-          name: Run tests
-          # Runs jest with "--maxWorkers=2" argument to avoid OOM issues
-          command: npm test # replace with `yarn test` if using yarn
-
-      - store_artifacts: 
-          path: test-results
-
-      - store_test_results:
-          path: test-results
-
 workflows:
   version: 2
   Build and Test:
