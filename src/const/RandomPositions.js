@@ -22,11 +22,26 @@ const myRandomPositions = () => {
     "N",
     "R",
     "r",
-    "q",
     "B",
     "N",
     "b",
-    "n"
+    "n",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
   ];
 
   const randomChessPieces = shuffle(ChessPieces);
@@ -115,6 +130,50 @@ const myRandomPositions = () => {
     }
 
     setBoard.push(randomChessPieces[i] + "@" + b);
+
+    const removePawns = val => {
+      for (let index = 0; index < setBoard.length; index++) {
+        for (let j = 0; j < val.length; j++) {
+          if (setBoard[index] === val[j]) {
+            setBoard.splice(index, 1);
+          }
+        }
+      }
+    };
+    removePawns([
+      "P@a1",
+      "P@b1",
+      "P@c1",
+      "P@d1",
+      "P@e1",
+      "P@f1",
+      "P@g1",
+      "P@h1",
+      "p@a1",
+      "p@b1",
+      "p@c1",
+      "p@d1",
+      "p@e1",
+      "p@f1",
+      "p@g1",
+      "p@h1",
+      "P@a8",
+      "P@b8",
+      "P@c8",
+      "P@d8",
+      "P@e8",
+      "P@f8",
+      "P@g8",
+      "P@h8",
+      "p@a8",
+      "p@b8",
+      "p@c8",
+      "p@d8",
+      "p@e8",
+      "p@f8",
+      "p@g8",
+      "p@h8"
+    ]);
   }
 
   kingPosition();
