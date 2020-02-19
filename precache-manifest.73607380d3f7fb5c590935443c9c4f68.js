@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb66b8a36b80496dfd35aaabc7976130",
+    "revision": "3b10205a17e82a1923a9dc48a0433f2c",
     "url": "/Chess-Random-Moves/index.html"
   },
   {
-    "revision": "ffb990a9acb7f2c57f20",
+    "revision": "12937480a05eb5c6e7cd",
     "url": "/Chess-Random-Moves/static/css/main.f9b24a81.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js.LICENSE"
   },
   {
-    "revision": "ffb990a9acb7f2c57f20",
-    "url": "/Chess-Random-Moves/static/js/main.1c5db1ce.chunk.js"
+    "revision": "12937480a05eb5c6e7cd",
+    "url": "/Chess-Random-Moves/static/js/main.14d396b1.chunk.js"
   },
   {
     "revision": "4b16824bf3ebb25ab42b",
