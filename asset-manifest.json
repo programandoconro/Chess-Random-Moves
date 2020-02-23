@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Chess-Random-Moves/static/css/main.f9b24a81.chunk.css",
-    "main.js": "/Chess-Random-Moves/static/js/main.14d396b1.chunk.js",
-    "main.js.map": "/Chess-Random-Moves/static/js/main.14d396b1.chunk.js.map",
+    "main.css": "/Chess-Random-Moves/static/css/main.358e61e6.chunk.css",
+    "main.js": "/Chess-Random-Moves/static/js/main.f0ea86e5.chunk.js",
+    "main.js.map": "/Chess-Random-Moves/static/js/main.f0ea86e5.chunk.js.map",
     "runtime-main.js": "/Chess-Random-Moves/static/js/runtime-main.19fe41ae.js",
     "runtime-main.js.map": "/Chess-Random-Moves/static/js/runtime-main.19fe41ae.js.map",
     "static/js/2.d2ca3fb8.chunk.js": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js",
     "static/js/2.d2ca3fb8.chunk.js.map": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js.map",
     "index.html": "/Chess-Random-Moves/index.html",
-    "precache-manifest.73607380d3f7fb5c590935443c9c4f68.js": "/Chess-Random-Moves/precache-manifest.73607380d3f7fb5c590935443c9c4f68.js",
+    "precache-manifest.130023da5f3de79bf79de19c2ef4b785.js": "/Chess-Random-Moves/precache-manifest.130023da5f3de79bf79de19c2ef4b785.js",
     "service-worker.js": "/Chess-Random-Moves/service-worker.js",
-    "static/css/main.f9b24a81.chunk.css.map": "/Chess-Random-Moves/static/css/main.f9b24a81.chunk.css.map",
+    "static/css/main.358e61e6.chunk.css.map": "/Chess-Random-Moves/static/css/main.358e61e6.chunk.css.map",
     "static/js/2.d2ca3fb8.chunk.js.LICENSE": "/Chess-Random-Moves/static/js/2.d2ca3fb8.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.19fe41ae.js",
     "static/js/2.d2ca3fb8.chunk.js",
-    "static/css/main.f9b24a81.chunk.css",
-    "static/js/main.14d396b1.chunk.js"
+    "static/css/main.358e61e6.chunk.css",
+    "static/js/main.f0ea86e5.chunk.js"
   ]
 }
