@@ -3,13 +3,13 @@ import Chess from "react-chess";
 import myRandomPositions from "./const/RandomPositions";
 
 const Random = () => {
-  const [position, handlePosition] = useState([]);
-  const [allPositions, addPosition] = useState([]);
+  const [position, handlePosition] = useState(myRandomPositions());
+  const [allPositions, addPosition] = useState(myRandomPositions());
 
   const makeRandomPosition = () => {
     handlePosition(myRandomPositions());
-    allPositions.push(" / " + position);
     addPosition(allPositions);
+    allPositions.push(" / " + position);
   };
 
   return (
