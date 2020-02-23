@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 //import ReadPGN from './ReadPGN';
 import Random from "./Random";
@@ -12,41 +13,51 @@ import Queen from "./Queen";
 
 function App() {
   return (
-    <div className="ChessBoard">
-      <h5> Chess Random Moves Generator, by Ro </h5>
+    <Router>
+      <div className="TabMenu">
+        <h1> * </h1>
+        <Link to="random">
+          <p> Random Positions </p>
+        </Link>
+        <h1> * </h1>
+        <Link to="/pieces">
+          <p> Random moves by piece </p>
+        </Link>
+        <h1> * </h1>
+      </div>
 
-      <h5>Random Positions</h5>
-      <Random />
-      <br />
+      <Switch>
+        <div className="ChessBoard">
+          <Route path="/random">
+            <Random />
+          </Route>
 
-      <h5>King</h5>
-      <King />
-      <br />
-
-      <h5>Rook</h5>
-      <Rook />
-      <br />
-
-      <h5>Dark square Bishop</h5>
-      <BishopDS />
-      <br />
-
-      <h5>Light Square Bishop</h5>
-      <BishopLS />
-      <br />
-
-      <h5>Knight</h5>
-      <Knight />
-      <br />
-
-      <h5>Pawn</h5>
-      <Pawn />
-      <br />
-
-      <h5>Queen Moves</h5>
-      <Queen />
-      <br />
-    </div>
+          <Route path="/pieces">
+            <p>Queen</p>
+            <Queen />
+            <br />
+            <p>King</p>
+            <King />
+            <br />
+            <p>Pawn</p>
+            <Pawn />
+            <br />
+            <p>Dark Square Bishop</p>
+            <BishopDS />
+            <br />
+            <p>Light Square Bishop</p>
+            <BishopLS />
+            <br />
+            <p>Rook</p>
+            <Rook />
+            <br />
+            <p>Knight</p>
+            <Knight />
+            <br />
+          </Route>
+        </div>
+      </Switch>
+    </Router>
   );
 }
 

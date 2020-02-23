@@ -1,6 +1,9 @@
 .ChessBoard {
-  max-width: 500px;
+  width: 80%;
   align-items: center;
   align-content: center;
   text-align: center;
+}
+.TabMenu {
+  display: flex;
 }
