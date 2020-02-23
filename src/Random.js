@@ -4,12 +4,10 @@ import myRandomPositions from "./const/RandomPositions";
 
 const Random = () => {
   const [position, handlePosition] = useState(myRandomPositions());
-  const [allPositions, addPosition] = useState(myRandomPositions());
-
+  const [allPositions] = useState([]);
+  allPositions.push(" / " + position);
   const makeRandomPosition = () => {
     handlePosition(myRandomPositions());
-    addPosition(allPositions);
-    allPositions.push(" / " + position);
   };
 
   return (
