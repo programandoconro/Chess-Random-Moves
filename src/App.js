@@ -14,42 +14,16 @@ import Queen from "./Queen";
 function App() {
   return (
     <Router>
-      <h4 style={{ textAlign: "center" }}>
-        Chess Random Moves Generator, by Ro{" "}
-      </h4>
-
       <div className="TabMenu">
+        <h1> * </h1>
         <Link to="random">
-          <h5> Random Positions </h5>
+          <p> Random Positions </p>
         </Link>
-        <h1> ''</h1>
-        <Link to="/king">
-          <h5> King </h5>
+        <h1> * </h1>
+        <Link to="/pieces">
+          <p> Random moves by piece </p>
         </Link>
-        <h1> ''</h1>
-        <Link to="/rook">
-          <h5> Rook </h5>
-        </Link>
-        <h1> ''</h1>
-        <Link to="/darkbishop">
-          <h5> Dark square Bishop </h5>
-        </Link>
-        <h1> ''</h1>
-        <Link to="/lightbishop">
-          <h5> Light Square Bishop </h5>
-        </Link>
-        <h1> ''</h1>
-        <Link to="/knight">
-          <h5> Knight </h5>
-        </Link>
-        <h1> ''</h1>
-        <Link to="/pawn">
-          <h5> Pawn </h5>
-        </Link>
-        <h1> ''</h1>
-        <Link to="/queen">
-          <h5> Queen </h5>
-        </Link>
+        <h1> * </h1>
       </div>
 
       <Switch>
@@ -58,26 +32,28 @@ function App() {
             <Random />
           </Route>
 
-          <Route path="/queen">
+          <Route path="/pieces">
+            <p>Queen</p>
             <Queen />
-          </Route>
-          <Route path="/pawn">
-            <Pawn />
-          </Route>
-          <Route path="/king">
+            <br />
+            <p>King</p>
             <King />
-          </Route>
-          <Route path="/darkbishop">
+            <br />
+            <p>Pawn</p>
+            <Pawn />
+            <br />
+            <p>Dark Square Bishop</p>
             <BishopDS />
-          </Route>
-          <Route path="/lightbishop">
+            <br />
+            <p>Light Square Bishop</p>
             <BishopLS />
-          </Route>
-          <Route path="/rook">
+            <br />
+            <p>Rook</p>
             <Rook />
-          </Route>
-          <Route path="/knight">
+            <br />
+            <p>Knight</p>
             <Knight />
+            <br />
           </Route>
         </div>
       </Switch>
