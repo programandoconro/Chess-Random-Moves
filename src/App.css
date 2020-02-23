@@ -1,7 +1,5 @@
 .ChessBoard {
-  margin-top: auto;
-  max-width: fit-content;
-
+  max-width: 500px;
   align-items: center;
   align-content: center;
   text-align: center;
