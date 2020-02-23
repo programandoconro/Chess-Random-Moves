@@ -14,40 +14,43 @@ import Queen from "./Queen";
 function App() {
   return (
     <Router>
-      <h4> Chess Random Moves Generator, by Ro </h4>
+      <h4 style={{ textAlign: "center" }}>
+        Chess Random Moves Generator, by Ro{" "}
+      </h4>
 
-      <Link to="random">
-        <h4>Random Positions</h4>
-      </Link>
-      <ul>
+      <div className="TabMenu">
+        <Link to="random">
+          <h5> Random Positions </h5>
+        </Link>
+        <h1> ''</h1>
         <Link to="/king">
-          <h5>King</h5>
+          <h5> King </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/rook">
-          <h5>Rook</h5>
+          <h5> Rook </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/darkbishop">
-          <h5>Dark square Bishop</h5>
+          <h5> Dark square Bishop </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/lightbishop">
-          <h5>Light Square Bishop</h5>
+          <h5> Light Square Bishop </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/knight">
-          <h5>Knight</h5>
+          <h5> Knight </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/pawn">
-          <h5>Pawn</h5>
+          <h5> Pawn </h5>
         </Link>
-
+        <h1> ''</h1>
         <Link to="/queen">
-          <h5>Queen Moves</h5>
+          <h5> Queen </h5>
         </Link>
-      </ul>
+      </div>
 
       <Switch>
         <div className="ChessBoard">
