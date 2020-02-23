@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 //import ReadPGN from './ReadPGN';
 import Random from "./Random";
@@ -12,41 +13,72 @@ import Queen from "./Queen";
 
 function App() {
   return (
-    <div className="ChessBoard">
-      <h5> Chess Random Moves Generator, by Ro </h5>
+    <Router>
+      <h4> Chess Random Moves Generator, by Ro </h4>
 
-      <h5>Random Positions</h5>
-      <Random />
-      <br />
+      <Link to="random">
+        <h4>Random Positions</h4>
+      </Link>
+      <ul>
+        <Link to="/king">
+          <h5>King</h5>
+        </Link>
 
-      <h5>King</h5>
-      <King />
-      <br />
+        <Link to="/rook">
+          <h5>Rook</h5>
+        </Link>
 
-      <h5>Rook</h5>
-      <Rook />
-      <br />
+        <Link to="/darkbishop">
+          <h5>Dark square Bishop</h5>
+        </Link>
 
-      <h5>Dark square Bishop</h5>
-      <BishopDS />
-      <br />
+        <Link to="/lightbishop">
+          <h5>Light Square Bishop</h5>
+        </Link>
 
-      <h5>Light Square Bishop</h5>
-      <BishopLS />
-      <br />
+        <Link to="/knight">
+          <h5>Knight</h5>
+        </Link>
 
-      <h5>Knight</h5>
-      <Knight />
-      <br />
+        <Link to="/pawn">
+          <h5>Pawn</h5>
+        </Link>
 
-      <h5>Pawn</h5>
-      <Pawn />
-      <br />
+        <Link to="/queen">
+          <h5>Queen Moves</h5>
+        </Link>
+      </ul>
 
-      <h5>Queen Moves</h5>
-      <Queen />
-      <br />
-    </div>
+      <Switch>
+        <div className="ChessBoard">
+          <Route path="/random">
+            <Random />
+          </Route>
+
+          <Route path="/queen">
+            <Queen />
+          </Route>
+          <Route path="/pawn">
+            <Pawn />
+          </Route>
+          <Route path="/king">
+            <King />
+          </Route>
+          <Route path="/darkbishop">
+            <BishopDS />
+          </Route>
+          <Route path="/lightbishop">
+            <BishopLS />
+          </Route>
+          <Route path="/rook">
+            <Rook />
+          </Route>
+          <Route path="/knight">
+            <Knight />
+          </Route>
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
