@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="TabMenu">
         <h1> * </h1>
-        <Link to="random">
+        <Link to="/">
           <p> Random Positions </p>
         </Link>
         <h1> * </h1>
@@ -28,7 +28,7 @@ function App() {
 
       <Switch>
         <div className="ChessBoard">
-          <Route path="/random">
+          <Route exact path="/">
             <Random />
           </Route>
 
