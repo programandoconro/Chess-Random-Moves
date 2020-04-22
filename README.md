@@ -1,6 +1,6 @@
 ## Create and save Random Positions of Chess in a React JS App. 
 
-Check it out: https://progamandoconro.github.io/Chess-Random-Moves/,
+Check it out: https://programandoconro.github.io/Chess-Random-Moves/,
 
 or:
 
@@ -10,4 +10,4 @@ cd Chess-Random-Moves
 npm install
 npm start
 ```
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/progamandoconro/Chess-Random-Moves/master/example.png" /></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/programandoconro/Chess-Random-Moves/master/example.png" /></div>
